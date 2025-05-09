@@ -10,17 +10,6 @@ This repository contains the implementation of an AI model for bug report analys
 - `4oChatgpt_output.ipynb`: Notebook containing ChatGPT analysis outputs
 - `filtered_bug_report.xlsx`: Dataset containing 3,966 well-structured bug reports
 
-## Prerequisites
-
-### Hardware Requirements
-- NVIDIA GPU with CUDA support (for model fine-tuning)
-- Minimum 16GB RAM recommended
-- At least 10GB free disk space
-
-### Software Requirements
-- Python 3.8 or higher
-- NVIDIA CUDA Toolkit 12.6 or compatible version
-- Git (for version control)
 
 ## Installation
 
@@ -45,6 +34,17 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+## Follow the Step-by-Step Guide
+
+### Step 1
+![Step 1](images/step1.png)
+
+### Step 2
+![Step 2](images/step2.png)
+
+### Step 3
+![Step 3](images/step3.png)
 
 ## Required Files
 
@@ -106,6 +106,17 @@ pip install ollama
 3. Memory issues:
    - Reduce batch size in fine-tuning
    - Process data in smaller chunks
+## Prerequisites
+
+### Hardware Requirements
+- NVIDIA GPU with CUDA support (for model fine-tuning) 
+- Minimum 16GB RAM recommended
+- At least 10GB free disk space
+
+### Software Requirements
+- Python 3.8 or higher
+- NVIDIA CUDA Toolkit 12.6 or compatible version
+- Git (for version control)
 
 ## Contributing
 

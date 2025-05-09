@@ -38,13 +38,13 @@ pip install -r requirements.txt
 ## Follow the Step-by-Step Guide
 
 ### Step 1
-![Step 1](images/step1.png)
+![Step 1](images/1.png)
 
 ### Step 2
-![Step 2](images/step2.png)
+![Step 2](images/2.png)
 
 ### Step 3
-![Step 3](images/step3.png)
+![Step 3](images/3.png)
 
 ## Required Files
 

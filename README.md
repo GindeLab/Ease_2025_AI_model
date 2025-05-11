@@ -37,7 +37,13 @@ pip install -r requirements.txt
 
 ## Follow the Step-by-Step Guide
 
-### Step 1
+### Step 1: Dataset Collection
+1. Clone the dataset repository:
+```bash
+git clone https://github.com/GindeLab/EASE_2025_Data_paper
+```
+2. Follow the instructions in the repository to gather the required dataset.
+
 ![Step 1](images/1.png)
 
 ### Step 2

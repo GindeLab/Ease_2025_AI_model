@@ -10,6 +10,17 @@ This repository contains the implementation of an AI model for bug report analys
 - `4oChatgpt_output.ipynb`: Notebook containing ChatGPT analysis outputs
 - `filtered_bug_report.xlsx`: Dataset containing 3,966 well-structured bug reports
 
+## Prerequisites
+
+### Hardware Requirements
+- NVIDIA GPU with CUDA support (for model fine-tuning)
+- Minimum 16GB RAM recommended
+- At least 10GB free disk space
+
+### Software Requirements
+- Python 3.8 or higher
+- NVIDIA CUDA Toolkit 12.6 or compatible version
+- Git (for version control)
 
 ## Installation
 
@@ -35,22 +46,39 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Follow the Step-by-Step Guide
 
-### Step 1: Dataset Collection
-1. Clone the dataset repository:
-```bash
-git clone https://github.com/GindeLab/EASE_2025_Data_paper
-```
-2. Follow the instructions in the repository to gather the required dataset.
+## 🗂️ Dataset Setup Instructions
 
-![Step 1](images/1.png)
+1. **Clone the Dataset Repository**
+   Start by cloning the official dataset repository:
 
-### Step 2
-![Step 2](images/2.png)
+   ```bash
+   git clone https://github.com/GindeLab/EASE_2025_Data_paper
+   ```
 
-### Step 3
-![Step 3](images/3.png)
+2. **Prepare the Dataset**
+
+   * Navigate into the cloned repository folder.
+   * Follow the data processing steps illustrated in the screenshots below.
+   * After completing the steps, you will get a file named `filtered_bug_report.xlsx`.
+
+   ![Step 1](images/1.png)
+
+3. **Generate Casual Bug Descriptions**
+   Use the notebook `Preprocess/Generate_summary_llama.ipynb` to create casual (unstructured) bug descriptions from the structured data.
+
+4. **Fine-Tune the Model**
+   Fine-tune the model using `Code/RQ1_Fine_Tuning/FT_Qwen2.5.ipynb`.
+
+   ![Step 2](images/2.png)
+
+5. **GGUG Conversion**
+   The final cells in the fine-tuning notebook (`Code/RQ1_Fine_Tuning`) contain code for converting outputs into the GGUG format.
+
+   ![Step 3](images/3.png)
+
+---
+
 
 ## Required Files
 
@@ -112,17 +140,6 @@ pip install ollama
 3. Memory issues:
    - Reduce batch size in fine-tuning
    - Process data in smaller chunks
-## Prerequisites
-
-### Hardware Requirements
-- NVIDIA GPU with CUDA support (for model fine-tuning) 
-- Minimum 16GB RAM recommended
-- At least 10GB free disk space
-
-### Software Requirements
-- Python 3.8 or higher
-- NVIDIA CUDA Toolkit 12.6 or compatible version
-- Git (for version control)
 
 ## Contributing
 
@@ -138,4 +155,13 @@ MIT
 
 If you use this code in your research, please cite:
 
+@misc{acharya2025enhancebugreportquality,
+      title={Can We Enhance Bug Report Quality Using LLMs?: An Empirical Study of LLM-Based Bug Report Generation}, 
+      author={Jagrit Acharya and Gouri Ginde},
+      year={2025},
+      eprint={2504.18804},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2504.18804}, 
+}
 
